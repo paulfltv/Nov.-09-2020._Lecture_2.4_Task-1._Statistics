@@ -10,15 +10,6 @@ class StatsServiceTest {
 	void calculateSumTotal() {
 		StatsService service = new StatsService();
 		int[] purchases = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-//
-//        чтобы много раз не указывать в других тестах строки
-//        StatsService service = new StatsService();
-//        int[] purchases = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-//        их можно вывести наверх (для всех тестов, где они нужны), указав под class StatsServiceTest {
-//        private StatsService service = new StatsService();
-//        private int[] purchases = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-//        после чего эти строки можно удалить из тестов, т.к. они уже будут вверху
-//
 		int expected = 180;
 		int actual = service.calculateSumTotal(purchases);
 		assertEquals(expected, actual);
