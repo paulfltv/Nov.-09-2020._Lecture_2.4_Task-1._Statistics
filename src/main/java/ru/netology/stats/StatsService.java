@@ -64,7 +64,7 @@ public class StatsService {
 
 
 	public int saleAboveSumAverage(int[] purchases) {
-		int sumAverage = sumAverage(purchases);
+		int sumAverage = calculateSumAverage(purchases);
 		int quantity = 0;
 		for (int purchase : purchases) {
 			if (sumAverage < purchase) {
@@ -75,7 +75,7 @@ public class StatsService {
 	}
 
 	public int saleBelowSumAverage(int[] purchases) {
-		int sumAverage = sumAverage(purchases);
+		int sumAverage = calculateSumAverage(purchases);
 		int quantity = 0;
 		for (int purchase : purchases) {
 			if (sumAverage > purchase) {
